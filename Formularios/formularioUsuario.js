@@ -33,7 +33,7 @@ export function formularioUsuario() {
     const data = Object.fromEntries(new FormData(form).entries());
 
     try {
-      const response = await fetch('http://localhost:3000/usuarios', {
+      const response = await fetch('https://apicon-sa5n.onrender.com/usuarios', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
